@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="5.0.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
-
-  <lib desc="#Wiring" name="0">
-    <tool name="Pin">
-      <a name="appearance" val="classic"/>
-    </tool>
-  </lib>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#FPArithmetic" name="4"/>
-  <lib desc="#Memory" name="5"/>
-  <lib desc="#I/O" name="6"/>
-  <lib desc="#Base" name="7">
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
     <tool name="Text Tool">
+      <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
     </tool>
   </lib>
   <main name="Principal"/>
@@ -25,33 +28,38 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool map="Button2" name="Menu Tool"/>
-    <tool map="Button3" name="Menu Tool"/>
-    <tool map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool name="Poke Tool"/>
-    <tool name="Edit Tool"/>
-    <tool name="Wiring Tool"/>
-    <tool name="Text Tool">
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Wiring Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
       <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
     </tool>
     <sep/>
-    <tool name="Pin"/>
-    <tool name="Pin">
-      <a name="facing" val="west"/>
-      <a name="labelloc" val="east"/>
-      <a name="type" val="output"/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
     </tool>
-    <tool name="NOT Gate"/>
-    <tool name="AND Gate"/>
-    <tool name="OR Gate"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
   </toolbar>
   <circuit name="Estadio">
-    <a name="appearance" val="custom"/>
     <a name="circuit" val="Estadio"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="#030303" height="583" rx="10" ry="10" stroke="none" width="1284" x="64" y="32"/>
       <rect fill="#1c1a10" height="104" rx="52" ry="52" stroke="none" width="104" x="1068" y="63"/>
@@ -565,29 +573,29 @@
       <rect fill="#27272a" height="14" stroke="#475569" width="12" x="835" y="298"/>
       <rect fill="#e2e8f0" height="12" stroke="#94a3b8" width="384" x="512" y="255"/>
       <rect fill="#dc2626" height="10" stroke="#475569" width="30" x="513" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="528" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="528" y="263">UFAL</text>
       <rect fill="#ffffff" height="10" stroke="#475569" width="32" x="543" y="256"/>
-      <text dominant-baseline="central" fill="#1d4ed8" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="559" y="263">UFAL</text>
+      <text fill="#1d4ed8" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="559" y="263">UFAL</text>
       <rect fill="#1d4ed8" height="10" stroke="#475569" width="30" x="575" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="590" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="590" y="263">UFAL</text>
       <rect fill="#dc2626" height="10" stroke="#475569" width="34" x="605" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="622" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="622" y="263">UFAL</text>
       <rect fill="#ffffff" height="10" stroke="#475569" width="33" x="639" y="256"/>
-      <text dominant-baseline="central" fill="#dc2626" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="656" y="263">UFAL</text>
+      <text fill="#dc2626" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="656" y="263">UFAL</text>
       <rect fill="#1d4ed8" height="10" stroke="#475569" width="31" x="672" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="688" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="688" y="263">UFAL</text>
       <rect fill="#dc2626" height="10" stroke="#475569" width="32" x="703" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="719" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="719" y="263">UFAL</text>
       <rect fill="#ffffff" height="10" stroke="#475569" width="32" x="735" y="256"/>
-      <text dominant-baseline="central" fill="#1d4ed8" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="751" y="263">UFAL</text>
+      <text fill="#1d4ed8" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="751" y="263">UFAL</text>
       <rect fill="#1d4ed8" height="10" stroke="#475569" width="32" x="767" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="783" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="783" y="263">UFAL</text>
       <rect fill="#dc2626" height="10" stroke="#475569" width="32" x="799" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="815" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="815" y="263">UFAL</text>
       <rect fill="#ffffff" height="10" stroke="#475569" width="32" x="831" y="256"/>
-      <text dominant-baseline="central" fill="#dc2626" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="847" y="263">UFAL</text>
+      <text fill="#dc2626" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="847" y="263">UFAL</text>
       <rect fill="#1d4ed8" height="10" stroke="#475569" width="32" x="863" y="256"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="880" y="263">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="6" font-weight="bold" text-anchor="middle" x="880" y="263">UFAL</text>
       <polygon fill="#8c9196" points="384,290 442,322 308,452 220,395" stroke="#e2e8f0" stroke-width="2"/>
       <polygon fill="#e2e8f0" points="220,395 308,452 304,468 224,436" stroke="#94a3b8"/>
       <polygon fill="#cbd5e1" points="384,290 442,322 445,316 388,284" stroke="#94a3b8"/>
@@ -723,25 +731,25 @@
       <rect fill="#eab308" height="14" stroke="#ca8a04" width="12" x="874" y="493"/>
       <rect fill="#eab308" height="14" stroke="#ca8a04" width="12" x="1014" y="493"/>
       <rect fill="#dc2626" height="6" stroke="#64748b" width="58" x="302" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="331" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="331" y="491">UFAL</text>
       <rect fill="#ffffff" height="6" stroke="#64748b" width="55" x="365" y="486"/>
-      <text dominant-baseline="central" fill="#1d4ed8" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="393" y="491">UFAL</text>
+      <text fill="#1d4ed8" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="393" y="491">UFAL</text>
       <rect fill="#1d4ed8" height="6" stroke="#64748b" width="60" x="465" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="495" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="495" y="491">UFAL</text>
       <rect fill="#dc2626" height="6" stroke="#64748b" width="65" x="530" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="562" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="562" y="491">UFAL</text>
       <rect fill="#ffffff" height="6" stroke="#64748b" width="65" x="600" y="486"/>
-      <text dominant-baseline="central" fill="#dc2626" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="633" y="491">UFAL</text>
+      <text fill="#dc2626" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="633" y="491">UFAL</text>
       <rect fill="#1d4ed8" height="6" stroke="#64748b" width="65" x="760" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="793" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="793" y="491">UFAL</text>
       <rect fill="#dc2626" height="6" stroke="#64748b" width="65" x="830" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="863" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="863" y="491">UFAL</text>
       <rect fill="#ffffff" height="6" stroke="#64748b" width="60" x="900" y="486"/>
-      <text dominant-baseline="central" fill="#1d4ed8" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="930" y="491">UFAL</text>
+      <text fill="#1d4ed8" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="930" y="491">UFAL</text>
       <rect fill="#1d4ed8" height="6" stroke="#64748b" width="60" x="965" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="995" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="995" y="491">UFAL</text>
       <rect fill="#dc2626" height="6" stroke="#64748b" width="57" x="1065" y="486"/>
-      <text dominant-baseline="central" fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="1095" y="491">UFAL</text>
+      <text fill="#ffffff" font-family="SansSerif" font-size="4" font-weight="bold" text-anchor="middle" x="1095" y="491">UFAL</text>
       <rect fill="#f1f5f9" height="13" rx="2" ry="2" stroke="#94a3b8" width="60" x="480" y="471"/>
       <rect fill="#f1f5f9" height="13" rx="2" ry="2" stroke="#94a3b8" width="60" x="884" y="471"/>
       <rect fill="#1e3a5f" height="19" rx="2" ry="2" stroke="#e2e8f0" width="56" x="570" y="465"/>
@@ -1050,14 +1058,14 @@
       <rect fill="#ffffff" height="4" rx="2" ry="2" stroke="none" width="4" x="1074" y="396"/>
       <rect fill="#fef9c3" height="5" stroke="#facc15" width="6" x="1081" y="396"/>
       <rect fill="#ffffff" height="4" rx="2" ry="2" stroke="none" width="4" x="1082" y="396"/>
-      <circ-anchor facing="east" x="710" y="390"/>
+      <circ-anchor facing="east" height="6" width="6" x="710" y="390"/>
     </appear>
   </circuit>
   <circuit name="Telao">
-    <a name="appearance" val="custom"/>
     <a name="circuit" val="Telao"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="#2d3748" height="310" rx="10" ry="10" stroke="#1a202c" stroke-width="2" width="664" x="0" y="0"/>
       <rect fill="#1e2530" height="296" rx="6" ry="6" stroke="#0f141c" width="650" x="7" y="7"/>
@@ -3341,67 +3349,65 @@
       <rect fill="#f6f1df" height="4" stroke="none" width="6" x="614" y="291"/>
       <rect fill="#f6f1df" height="4" stroke="none" width="6" x="626" y="291"/>
       <rect fill="#f6f1df" height="4" stroke="none" width="3" x="641" y="291"/>
-      <circ-anchor facing="east" x="335" y="310"/>
+      <circ-anchor facing="east" height="6" width="6" x="332" y="310"/>
     </appear>
   </circuit>
   <circuit name="Principal">
-    <a name="appearance" val="custom"/>
     <a name="circuit" val="Principal"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <a name="simulationFrequency" val="1.0"/>
     <appear>
       <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="50" y="50"/>
-      <circ-anchor facing="east" x="50" y="50"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="47"/>
     </appear>
   </circuit>
   <circuit name="Jogadores">
     <a name="circuit" val="Jogadores"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(1020,680)" name="Tunnel">
-      <a name="label" val="D6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1020,740)" name="Tunnel">
-      <a name="label" val="D7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1020,800)" name="Tunnel">
-      <a name="label" val="D8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1020,860)" name="Tunnel">
-      <a name="label" val="D9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1020,920)" name="Tunnel">
-      <a name="label" val="D10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,310)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,350)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD5"/>
+    <wire from="(750,1130)" to="(800,1130)"/>
+    <wire from="(750,1150)" to="(800,1150)"/>
+    <wire from="(870,450)" to="(870,460)"/>
+    <wire from="(770,1160)" to="(770,1230)"/>
+    <wire from="(770,1050)" to="(770,1120)"/>
+    <wire from="(380,1300)" to="(380,1310)"/>
+    <wire from="(380,1420)" to="(380,1430)"/>
+    <wire from="(380,1350)" to="(380,1360)"/>
+    <wire from="(380,1470)" to="(380,1480)"/>
+    <wire from="(710,1050)" to="(770,1050)"/>
+    <wire from="(710,1230)" to="(770,1230)"/>
+    <wire from="(390,1070)" to="(390,1090)"/>
+    <wire from="(390,1130)" to="(390,1150)"/>
+    <wire from="(710,1110)" to="(750,1110)"/>
+    <wire from="(710,1170)" to="(750,1170)"/>
+    <wire from="(750,1110)" to="(750,1130)"/>
+    <wire from="(750,1150)" to="(750,1170)"/>
+    <wire from="(390,1090)" to="(420,1090)"/>
+    <wire from="(390,1130)" to="(420,1130)"/>
+    <wire from="(540,1390)" to="(560,1390)"/>
+    <wire from="(360,1150)" to="(390,1150)"/>
+    <wire from="(360,1070)" to="(390,1070)"/>
+    <wire from="(380,1310)" to="(400,1310)"/>
+    <wire from="(380,1350)" to="(400,1350)"/>
+    <wire from="(380,1430)" to="(400,1430)"/>
+    <wire from="(380,1470)" to="(400,1470)"/>
+    <wire from="(360,1300)" to="(380,1300)"/>
+    <wire from="(360,1360)" to="(380,1360)"/>
+    <wire from="(360,1420)" to="(380,1420)"/>
+    <wire from="(360,1480)" to="(380,1480)"/>
+    <wire from="(450,1330)" to="(470,1330)"/>
+    <wire from="(470,1370)" to="(490,1370)"/>
+    <wire from="(450,1450)" to="(470,1450)"/>
+    <wire from="(470,1410)" to="(490,1410)"/>
+    <wire from="(770,1120)" to="(800,1120)"/>
+    <wire from="(770,1160)" to="(800,1160)"/>
+    <wire from="(470,1330)" to="(470,1370)"/>
+    <wire from="(470,1410)" to="(470,1450)"/>
+    <comp lib="0" loc="(380,410)" name="Tunnel">
+      <a name="label" val="BE7"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(1110,390)" name="Tunnel">
@@ -3409,109 +3415,20 @@
       <a name="label" val="BD6"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(1110,410)" name="Tunnel">
+    <comp lib="5" loc="(380,350)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 4 (E4)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(660,1060)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="BD7"/>
+      <a name="label" val="BE4"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(1110,430)" name="Tunnel">
+    <comp lib="0" loc="(1110,370)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="BD8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,450)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,470)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(1110,500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="B_GD"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1050)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1070)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1090)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="B_GE"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="B_GD"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1280)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1300)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1310)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1350)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E9"/>
+      <a name="label" val="BD5"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(310,1380)" name="Tunnel">
@@ -3519,24 +3436,22 @@
       <a name="label" val="E10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1400)" name="Tunnel">
+    <comp lib="5" loc="(590,390)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="0" loc="(310,1500)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D1"/>
+      <a name="label" val="D10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1410)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D2"/>
+    <comp lib="0" loc="(380,470)" name="Tunnel">
+      <a name="label" val="BE10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1420)" name="Tunnel">
+    <comp lib="0" loc="(600,940)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(310,1430)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D4"/>
+      <a name="label" val="BE10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(310,1440)" name="Tunnel">
@@ -3544,182 +3459,259 @@
       <a name="label" val="D5"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1460)" name="Tunnel">
+    <comp lib="0" loc="(1110,350)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D6"/>
+      <a name="label" val="BD4"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1470)" name="Tunnel">
+    <comp lib="0" loc="(980,860)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D7"/>
+      <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1480)" name="Tunnel">
+    <comp lib="4" loc="(860,860)" name="D Flip-Flop">
+      <a name="label" val="FF_D4"/>
+    </comp>
+    <comp lib="0" loc="(690,370)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D8"/>
+      <a name="label" val="D4"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1490)" name="Tunnel">
+    <comp lib="0" loc="(310,1050)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D9"/>
+      <a name="label" val="E8"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(310,1500)" name="Tunnel">
+    <comp lib="0" loc="(820,680)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="D10"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(380,450)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Atacante 9 (E9)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="5" loc="(1110,470)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Atacante 10 (D10)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(600,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(710,1110)" name="OR Gate"/>
+    <comp lib="0" loc="(310,1300)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(780,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B_GD"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(380,290)" name="Tunnel">
       <a name="label" val="BE1"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(380,310)" name="Tunnel">
-      <a name="label" val="BE2"/>
+    <comp lib="4" loc="(860,680)" name="D Flip-Flop">
+      <a name="label" val="FF_D1"/>
+    </comp>
+    <comp lib="5" loc="(1110,410)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 7 (D7)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(630,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E2"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(380,330)" name="Tunnel">
-      <a name="label" val="BE3"/>
+    <comp lib="5" loc="(380,390)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 6 (E6)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(660,1210)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD6"/>
       <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(1020,740)" name="Tunnel">
+      <a name="label" val="D7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1070)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(380,500)" name="Button">
+      <a name="color" val="#facc15"/>
+      <a name="label" val="GOL"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(1110,390)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 6 (D6)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(660,1100)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(600,880)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(1110,330)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 3 (D3)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
     </comp>
     <comp lib="0" loc="(380,350)" name="Tunnel">
       <a name="label" val="BE4"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(380,370)" name="Tunnel">
-      <a name="label" val="BE5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,390)" name="Tunnel">
-      <a name="label" val="BE6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,410)" name="Tunnel">
-      <a name="label" val="BE7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,430)" name="Tunnel">
-      <a name="label" val="BE8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,450)" name="Tunnel">
-      <a name="label" val="BE9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,470)" name="Tunnel">
-      <a name="label" val="BE10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(380,500)" name="Tunnel">
-      <a name="label" val="B_GE"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,680)" name="Tunnel">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(850,1140)" name="Tunnel">
       <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,700)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,740)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,760)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,860)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,880)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,920)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(440,940)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(470,1110)" name="Tunnel">
-      <a name="label" val="GOL"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(480,680)" name="Tunnel">
-      <a name="label" val="E1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(480,740)" name="Tunnel">
-      <a name="label" val="E2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(480,800)" name="Tunnel">
-      <a name="label" val="E3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(480,860)" name="Tunnel">
-      <a name="label" val="E4"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(480,920)" name="Tunnel">
       <a name="label" val="E5"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(490,390)" name="Constant"/>
-    <comp lib="0" loc="(530,450)" name="Tunnel">
+    <comp lib="0" loc="(980,820)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="E7"/>
+      <a name="label" val="BD8"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(540,410)" name="Tunnel">
+    <comp lib="5" loc="(1110,290)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 1 (D1)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(660,1120)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="E5"/>
+      <a name="label" val="BE9"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(560,370)" name="Tunnel">
+    <comp lib="5" loc="(380,430)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Atacante 8 (E8)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="4" loc="(1020,680)" name="D Flip-Flop">
+      <a name="label" val="FF_D6"/>
+    </comp>
+    <comp lib="0" loc="(660,1040)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="E3"/>
+      <a name="label" val="BE2"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(570,440)" name="Tunnel">
+    <comp lib="6" loc="(1140,265)" name="Text">
+      <a name="text" val="Time Direita"/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(820,860)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(860,390)" name="Tunnel">
       <a name="facing" val="south"/>
+      <a name="label" val="E9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(380,330)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 3 (E3)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="1" loc="(360,1300)" name="OR Gate"/>
+    <comp lib="5" loc="(780,410)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="0" loc="(1020,920)" name="Tunnel">
       <a name="label" val="D10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(580,330)" name="Tunnel">
+    <comp lib="0" loc="(380,370)" name="Tunnel">
+      <a name="label" val="BE5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,1230)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="E1"/>
+      <a name="label" val="BD8"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(590,1390)" name="Tunnel">
-      <a name="label" val="M"/>
+    <comp lib="0" loc="(980,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD6"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(590,390)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="D9"/>
+    <comp lib="6" loc="(350,265)" name="Text">
+      <a name="text" val="Time Esquerda"/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(720,390)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#fff100"/>
+    </comp>
+    <comp lib="0" loc="(980,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(1110,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(540,1390)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(380,470)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Atacante 10 (E10)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(490,390)" name="Constant"/>
+    <comp lib="0" loc="(660,1070)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(820,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(600,680)" name="Tunnel">
@@ -3727,12 +3719,153 @@
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(600,700)" name="Tunnel">
+    <comp lib="0" loc="(440,800)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(490,390)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="0" loc="(1110,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(780,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(540,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(1110,310)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 2 (D2)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="5" loc="(780,360)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="4" loc="(640,920)" name="D Flip-Flop">
+      <a name="label" val="FF_E10"/>
+    </comp>
+    <comp lib="0" loc="(660,1170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,1160)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(540,410)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="0" loc="(310,1090)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(440,880)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(480,860)" name="Tunnel">
+      <a name="label" val="E4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(450,1450)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(870,460)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="0" loc="(380,390)" name="Tunnel">
       <a name="label" val="BE6"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(600,740)" name="Tunnel">
+    <comp lib="4" loc="(1020,920)" name="D Flip-Flop">
+      <a name="label" val="FF_D10"/>
+    </comp>
+    <comp lib="0" loc="(860,740)" name="Tunnel">
+      <a name="label" val="D2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(820,760)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(640,740)" name="Tunnel">
+      <a name="label" val="E7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(480,920)" name="D Flip-Flop">
+      <a name="label" val="FF_E5"/>
+    </comp>
+    <comp lib="0" loc="(660,1130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1460)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(640,740)" name="D Flip-Flop">
+      <a name="label" val="FF_E7"/>
+    </comp>
+    <comp lib="5" loc="(1110,370)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 5 (D5)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(1110,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B_GD"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(980,880)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(980,740)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
@@ -3742,74 +3875,19 @@
       <a name="label" val="BE7"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(600,800)" name="Tunnel">
+    <comp lib="0" loc="(310,1480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(440,860)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(600,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(600,860)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(600,880)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(600,920)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(600,940)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(620,430)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(630,360)" name="Tunnel">
+    <comp lib="0" loc="(310,1290)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="E2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(640,680)" name="Tunnel">
-      <a name="label" val="E6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(640,740)" name="Tunnel">
-      <a name="label" val="E7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(640,800)" name="Tunnel">
-      <a name="label" val="E8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(640,860)" name="Tunnel">
-      <a name="label" val="E9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(640,920)" name="Tunnel">
-      <a name="label" val="E10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1030)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE2"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(660,1050)" name="Tunnel">
@@ -3817,139 +3895,21 @@
       <a name="label" val="BE3"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(660,1060)" name="Tunnel">
+    <comp lib="0" loc="(440,700)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="BE4"/>
+      <a name="label" val="BE1"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(660,1070)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
+    <comp lib="5" loc="(620,430)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
     </comp>
-    <comp lib="0" loc="(660,1090)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
+    <comp lib="1" loc="(360,1150)" name="OR Gate">
+      <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(660,1100)" name="Tunnel">
+    <comp lib="0" loc="(310,1350)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="BE7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1110)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1120)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1130)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BE10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1150)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1160)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1180)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1190)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1210)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1230)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1240)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD9"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,1250)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD10"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(660,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="E4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(670,330)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D1"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(690,370)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D4"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(700,440)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(720,390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="M"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(780,360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(780,410)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D6"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(800,1140)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="GOL"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(820,680)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(820,700)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD1"/>
+      <a name="label" val="E7"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(820,740)" name="Tunnel">
@@ -3957,139 +3917,240 @@
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(820,760)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD2"/>
+    <comp lib="5" loc="(860,390)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="0" loc="(480,740)" name="Tunnel">
+      <a name="label" val="E2"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(820,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(820,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(820,860)" name="Tunnel">
+    <comp lib="0" loc="(600,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(820,880)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD4"/>
+    <comp lib="0" loc="(1020,860)" name="Tunnel">
+      <a name="label" val="D9"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(820,920)" name="Tunnel">
+    <comp lib="0" loc="(440,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(820,940)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(840,330)" name="Tunnel">
+    <comp lib="1" loc="(710,1230)" name="OR Gate"/>
+    <comp lib="0" loc="(590,390)" name="Tunnel">
       <a name="facing" val="south"/>
+      <a name="label" val="D9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(640,800)" name="Tunnel">
       <a name="label" val="E8"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(850,1140)" name="Tunnel">
-      <a name="label" val="CLK"/>
+    <comp lib="0" loc="(440,760)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE2"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(860,390)" name="Tunnel">
-      <a name="facing" val="south"/>
+    <comp lib="5" loc="(840,330)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="5" loc="(980,390)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="1" loc="(590,1390)" name="NOT Gate"/>
+    <comp lib="5" loc="(570,440)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="5" loc="(1110,450)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Atacante 9 (D9)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(640,680)" name="Tunnel">
+      <a name="label" val="E6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(1020,740)" name="D Flip-Flop">
+      <a name="label" val="FF_D7"/>
+    </comp>
+    <comp lib="0" loc="(640,860)" name="Tunnel">
       <a name="label" val="E9"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(860,680)" name="Tunnel">
-      <a name="label" val="D1"/>
+    <comp lib="0" loc="(820,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD1"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(860,740)" name="Tunnel">
-      <a name="label" val="D2"/>
+    <comp lib="5" loc="(380,290)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 1 (E1)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(440,740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(860,800)" name="Tunnel">
-      <a name="label" val="D3"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
+    <comp lib="5" loc="(560,370)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
     </comp>
-    <comp lib="0" loc="(860,860)" name="Tunnel">
-      <a name="label" val="D4"/>
+    <comp lib="1" loc="(850,1140)" name="OR Gate"/>
+    <comp lib="0" loc="(720,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="M"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(860,920)" name="Tunnel">
       <a name="label" val="D5"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
+    <comp lib="0" loc="(570,440)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="D10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(360,1360)" name="OR Gate"/>
+    <comp lib="0" loc="(660,1190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,1090)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="6" loc="(418,1259)" name="Text">
+      <a name="text" val="CONTROLE DO LED AMARELO CENTRAL"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="5" loc="(380,370)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 5 (E5)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(700,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(710,1170)" name="OR Gate"/>
+    <comp lib="0" loc="(310,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(860,740)" name="D Flip-Flop">
+      <a name="label" val="FF_D2"/>
+    </comp>
+    <comp lib="1" loc="(470,1110)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(870,450)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="E10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(890,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D2"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(910,390)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="D5"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(910,430)" name="Tunnel">
+    <comp lib="0" loc="(310,1470)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="D7"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(980,390)" name="Constant"/>
-    <comp lib="0" loc="(980,680)" name="Tunnel">
+    <comp lib="0" loc="(1110,290)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
+      <a name="label" val="BD1"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(980,700)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD6"/>
+    <comp lib="5" loc="(580,330)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="0" loc="(380,430)" name="Tunnel">
+      <a name="label" val="BE8"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(980,740)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
+    <comp lib="5" loc="(890,340)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
     </comp>
-    <comp lib="0" loc="(980,760)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD7"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(980,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(980,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="BD8"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(980,860)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
-    <comp lib="0" loc="(980,880)" name="Tunnel">
+    <comp lib="0" loc="(660,1240)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="BD9"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="0" loc="(980,920)" name="Tunnel">
+    <comp lib="1" loc="(710,1050)" name="OR Gate"/>
+    <comp lib="0" loc="(1110,470)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="CLK"/>
+      <a name="label" val="BD10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(440,940)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(640,680)" name="D Flip-Flop">
+      <a name="label" val="FF_E6"/>
+    </comp>
+    <comp lib="1" loc="(360,1480)" name="OR Gate"/>
+    <comp lib="0" loc="(820,880)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(590,1390)" name="Tunnel">
+      <a name="label" val="M"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(360,1070)" name="OR Gate"/>
+    <comp lib="5" loc="(910,430)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="0" loc="(1110,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(440,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(1110,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(860,800)" name="D Flip-Flop">
+      <a name="label" val="FF_D3"/>
+    </comp>
+    <comp lib="5" loc="(660,400)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="1" loc="(360,1420)" name="OR Gate"/>
+    <comp lib="0" loc="(380,330)" name="Tunnel">
+      <a name="label" val="BE3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(480,680)" name="D Flip-Flop">
+      <a name="label" val="FF_E1"/>
+    </comp>
+    <comp lib="0" loc="(380,450)" name="Tunnel">
+      <a name="label" val="BE9"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="0" loc="(980,940)" name="Tunnel">
@@ -4097,632 +4158,571 @@
       <a name="label" val="BD10"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="1" loc="(360,1070)" name="OR Gate"/>
-    <comp lib="1" loc="(360,1150)" name="OR Gate"/>
-    <comp lib="1" loc="(360,1300)" name="OR Gate"/>
-    <comp lib="1" loc="(360,1360)" name="OR Gate"/>
-    <comp lib="1" loc="(360,1420)" name="OR Gate"/>
-    <comp lib="1" loc="(360,1480)" name="OR Gate"/>
-    <comp lib="1" loc="(450,1330)" name="OR Gate"/>
-    <comp lib="1" loc="(450,1450)" name="OR Gate"/>
-    <comp lib="1" loc="(470,1110)" name="AND Gate"/>
-    <comp lib="1" loc="(540,1390)" name="OR Gate"/>
-    <comp lib="1" loc="(590,1390)" name="NOT Gate"/>
-    <comp lib="1" loc="(710,1050)" name="OR Gate"/>
-    <comp lib="1" loc="(710,1110)" name="OR Gate"/>
-    <comp lib="1" loc="(710,1170)" name="OR Gate"/>
-    <comp lib="1" loc="(710,1230)" name="OR Gate"/>
-    <comp lib="1" loc="(850,1140)" name="OR Gate"/>
-    <comp lib="5" loc="(1020,680)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D6"/>
+    <comp lib="0" loc="(980,390)" name="Constant"/>
+    <comp lib="0" loc="(660,1150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(1020,740)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D7"/>
+    <comp lib="0" loc="(660,1110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(1020,800)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D8"/>
-    </comp>
-    <comp lib="5" loc="(1020,860)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
+    <comp lib="4" loc="(1020,860)" name="D Flip-Flop">
       <a name="label" val="FF_D9"/>
     </comp>
-    <comp lib="5" loc="(1020,920)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D10"/>
+    <comp lib="6" loc="(343,1011)" name="Text">
+      <a name="text" val="VALIDADOR DE GOL"/>
+      <a name="font" val="SansSerif bold 14"/>
     </comp>
-    <comp lib="5" loc="(480,680)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E1"/>
+    <comp lib="0" loc="(860,860)" name="Tunnel">
+      <a name="label" val="D4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(480,740)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E2"/>
+    <comp lib="6" loc="(740,630)" name="Text">
+      <a name="text" val="CIRCUITO DE CONTROLE DE POSSE DE BOLA E VALIDACAO DE GOL"/>
+      <a name="font" val="SansSerif bold 14"/>
     </comp>
-    <comp lib="5" loc="(480,800)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E3"/>
+    <comp lib="0" loc="(620,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(480,860)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E4"/>
+    <comp lib="0" loc="(560,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(480,920)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E5"/>
+    <comp lib="0" loc="(310,1400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(640,680)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E6"/>
+    <comp lib="0" loc="(310,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(640,740)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E7"/>
+    <comp lib="0" loc="(660,1220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(640,800)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E8"/>
+    <comp lib="0" loc="(310,1280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(640,860)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E9"/>
+    <comp lib="0" loc="(480,680)" name="Tunnel">
+      <a name="label" val="E1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(640,920)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_E10"/>
+    <comp lib="5" loc="(380,410)" name="Button">
+      <a name="color" val="#383838"/>
+      <a name="label" val="Jog 7 (E7)"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
     </comp>
-    <comp lib="5" loc="(860,680)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D1"/>
+    <comp lib="0" loc="(820,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(860,740)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D2"/>
+    <comp lib="0" loc="(980,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(860,800)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D3"/>
+    <comp lib="0" loc="(860,800)" name="Tunnel">
+      <a name="label" val="D3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(860,860)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="FF_D4"/>
+    <comp lib="0" loc="(910,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="5" loc="(860,920)" name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
+    <comp lib="5" loc="(630,360)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#383838"/>
+    </comp>
+    <comp lib="4" loc="(860,920)" name="D Flip-Flop">
       <a name="label" val="FF_D5"/>
     </comp>
-    <comp lib="6" loc="(1110,290)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_1_D1_d13047cd"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(1020,680)" name="Tunnel">
+      <a name="label" val="D6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,310)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_2_D2_b1320820"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(480,800)" name="Tunnel">
+      <a name="label" val="E3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,330)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_3_D3_2af111aa"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(910,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,350)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_4_D4_25b4507c"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(310,1420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,370)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_5_D5_fbed1a54"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(600,860)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,390)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_6_D6_fac2830b"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(640,920)" name="Tunnel">
+      <a name="label" val="E10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(1110,410)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_7_D7_05766550"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(1110,430)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Jog_8_D8_9ff1dcc2"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(1110,450)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Atacante_9_D9_e0273248"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(1110,470)" name="Button">
-      <a name="color" val="#ff000f"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Atacante_10_D10_9c6eb609"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(1110,500)" name="Button">
-      <a name="color" val="#facc15"/>
-      <a name="facing" val="west"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(380,290)" name="Button">
+    <comp lib="5" loc="(380,310)" name="Button">
       <a name="color" val="#383838"/>
-      <a name="label" val="Jog_1_E1_52d1f828"/>
+      <a name="label" val="Jog 2 (E2)"/>
+      <a name="labelloc" val="west"/>
       <a name="labelfont" val="SansSerif plain 11"/>
     </comp>
-    <comp lib="6" loc="(380,310)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_2_E2_46d6d327"/>
+    <comp lib="5" loc="(690,370)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="6" loc="(697,1011)" name="Text">
+      <a name="text" val="GERADOR DE PULSO DE ATUALIZAÇÃO"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="4" loc="(640,860)" name="D Flip-Flop">
+      <a name="label" val="FF_E9"/>
+    </comp>
+    <comp lib="0" loc="(660,1030)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(380,310)" name="Tunnel">
+      <a name="label" val="BE2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(700,440)" name="LED">
+      <a name="color" val="#fff7fa"/>
+      <a name="offcolor" val="#ff000f"/>
+    </comp>
+    <comp lib="0" loc="(1110,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(820,940)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD5"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(580,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,1250)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD10"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(660,1180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(480,860)" name="D Flip-Flop">
+      <a name="label" val="FF_E4"/>
+    </comp>
+    <comp lib="5" loc="(1110,430)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 8 (D8)"/>
+      <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif plain 11"/>
     </comp>
-    <comp lib="6" loc="(380,330)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_3_E3_eee66431"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
+    <comp lib="0" loc="(530,450)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(380,350)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_4_E4_508ecdd4"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
+    <comp lib="4" loc="(480,800)" name="D Flip-Flop">
+      <a name="label" val="FF_E3"/>
     </comp>
-    <comp lib="6" loc="(380,370)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_5_E5_b167956b"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,390)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_6_E6_6ecad8d6"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,410)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Jog_7_E7_85017a97"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,430)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Atacante_8_E8_2c360b22"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,450)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Atacante_9_E9_4066b1cf"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,470)" name="Button">
-      <a name="color" val="#383838"/>
-      <a name="label" val="Atacante_10_E10_e33676bd"/>
-      <a name="labelfont" val="SansSerif plain 11"/>
-    </comp>
-    <comp lib="6" loc="(380,500)" name="Button">
+    <comp lib="5" loc="(1110,500)" name="Button">
+      <a name="facing" val="west"/>
       <a name="color" val="#facc15"/>
       <a name="label" val="GOL"/>
+      <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="6" loc="(490,390)" name="LED">
+    <comp lib="0" loc="(310,1410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(820,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD3"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1490)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(1020,800)" name="Tunnel">
+      <a name="label" val="D8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(640,800)" name="D Flip-Flop">
+      <a name="label" val="FF_E8"/>
+    </comp>
+    <comp lib="0" loc="(840,330)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="E8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(530,450)" name="LED">
       <a name="color" val="#fff7fa"/>
       <a name="offcolor" val="#383838"/>
     </comp>
-    <comp lib="6" loc="(530,450)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(600,740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(540,410)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(310,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E9"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(560,370)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(440,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(570,440)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(580,330)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
-    </comp>
-    <comp lib="6" loc="(590,390)" name="LED">
+    <comp lib="5" loc="(910,390)" name="LED">
       <a name="color" val="#fff7fa"/>
       <a name="offcolor" val="#ff000f"/>
     </comp>
-    <comp lib="6" loc="(620,430)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(860,680)" name="Tunnel">
+      <a name="label" val="D1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(630,360)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(670,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D1"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(660,400)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
+    <comp lib="0" loc="(380,500)" name="Tunnel">
+      <a name="label" val="B_GE"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="6" loc="(670,330)" name="LED">
+    <comp lib="0" loc="(600,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE6"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D4"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(800,1140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="GOL"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(600,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BE8"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="1" loc="(450,1330)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(1110,350)" name="Button">
+      <a name="facing" val="west"/>
+      <a name="color" val="#ff000f"/>
+      <a name="label" val="Jog 4 (D4)"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif plain 11"/>
+    </comp>
+    <comp lib="0" loc="(980,760)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BD7"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(310,1130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B_GE"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(1020,800)" name="D Flip-Flop">
+      <a name="label" val="FF_D8"/>
+    </comp>
+    <comp lib="0" loc="(890,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D2"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="0" loc="(980,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="4" loc="(480,740)" name="D Flip-Flop">
+      <a name="label" val="FF_E2"/>
+    </comp>
+    <comp lib="0" loc="(470,1110)" name="Tunnel">
+      <a name="label" val="GOL"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
+    <comp lib="5" loc="(670,330)" name="LED">
       <a name="color" val="#fff7fa"/>
       <a name="offcolor" val="#ff000f"/>
     </comp>
-    <comp lib="6" loc="(690,370)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(700,440)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(720,390)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#fff100"/>
-    </comp>
-    <comp lib="6" loc="(780,360)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(780,410)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(840,330)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
-    </comp>
-    <comp lib="6" loc="(860,390)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
-    </comp>
-    <comp lib="6" loc="(870,460)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#383838"/>
-    </comp>
-    <comp lib="6" loc="(890,340)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(910,390)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(910,430)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="6" loc="(980,390)" name="LED">
-      <a name="color" val="#fff7fa"/>
-      <a name="offcolor" val="#ff000f"/>
-    </comp>
-    <comp lib="7" loc="(1140,265)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="Time Direita"/>
-    </comp>
-    <comp lib="7" loc="(340,1010)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="VALIDADOR DE GOL"/>
-    </comp>
-    <comp lib="7" loc="(350,265)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="Time Esquerda"/>
-    </comp>
-    <comp lib="7" loc="(415,1255)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="CONTROLE DO LED AMARELO CENTRAL"/>
-    </comp>
-    <comp lib="7" loc="(695,1010)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="GERADOR DE PULSO DE ATUALIZAÇÃO"/>
-    </comp>
-    <comp lib="7" loc="(740,630)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="CIRCUITO DE CONTROLE DE POSSE DE BOLA E VALIDACAO DE GOL"/>
-    </comp>
-    <wire from="(360,1070)" to="(390,1070)"/>
-    <wire from="(360,1150)" to="(390,1150)"/>
-    <wire from="(360,1300)" to="(380,1300)"/>
-    <wire from="(360,1360)" to="(380,1360)"/>
-    <wire from="(360,1420)" to="(380,1420)"/>
-    <wire from="(360,1480)" to="(380,1480)"/>
-    <wire from="(380,1300)" to="(380,1310)"/>
-    <wire from="(380,1310)" to="(400,1310)"/>
-    <wire from="(380,1350)" to="(380,1360)"/>
-    <wire from="(380,1350)" to="(400,1350)"/>
-    <wire from="(380,1420)" to="(380,1430)"/>
-    <wire from="(380,1430)" to="(400,1430)"/>
-    <wire from="(380,1470)" to="(380,1480)"/>
-    <wire from="(380,1470)" to="(400,1470)"/>
-    <wire from="(390,1070)" to="(390,1090)"/>
-    <wire from="(390,1090)" to="(420,1090)"/>
-    <wire from="(390,1130)" to="(390,1150)"/>
-    <wire from="(390,1130)" to="(420,1130)"/>
-    <wire from="(450,1330)" to="(470,1330)"/>
-    <wire from="(450,1450)" to="(470,1450)"/>
-    <wire from="(470,1330)" to="(470,1370)"/>
-    <wire from="(470,1370)" to="(490,1370)"/>
-    <wire from="(470,1410)" to="(470,1450)"/>
-    <wire from="(470,1410)" to="(490,1410)"/>
-    <wire from="(540,1390)" to="(560,1390)"/>
-    <wire from="(710,1050)" to="(770,1050)"/>
-    <wire from="(710,1110)" to="(750,1110)"/>
-    <wire from="(710,1170)" to="(750,1170)"/>
-    <wire from="(710,1230)" to="(770,1230)"/>
-    <wire from="(750,1110)" to="(750,1130)"/>
-    <wire from="(750,1130)" to="(800,1130)"/>
-    <wire from="(750,1150)" to="(750,1170)"/>
-    <wire from="(750,1150)" to="(800,1150)"/>
-    <wire from="(770,1050)" to="(770,1120)"/>
-    <wire from="(770,1120)" to="(800,1120)"/>
-    <wire from="(770,1160)" to="(770,1230)"/>
-    <wire from="(770,1160)" to="(800,1160)"/>
-    <wire from="(870,450)" to="(870,460)"/>
   </circuit>
   <circuit name="Placar">
-    <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Placar"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1.0"/>
-    <comp lib="5" loc="(300,70)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(380,60)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(890,80)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(970,70)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="6" loc="(100,100)" name="Button">
-      <a name="label" val="Gol_ASA"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="6" loc="(100,200)" name="Button">
-      <a name="label" val="reset_ASA"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="6" loc="(1080,80)" name="Button">
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(1370,470)" to="(1370,490)"/>
+    <wire from="(720,460)" to="(720,470)"/>
+    <wire from="(720,580)" to="(720,590)"/>
+    <wire from="(550,490)" to="(550,500)"/>
+    <wire from="(750,590)" to="(870,590)"/>
+    <wire from="(670,590)" to="(720,590)"/>
+    <wire from="(940,560)" to="(940,570)"/>
+    <wire from="(1250,490)" to="(1250,510)"/>
+    <wire from="(1260,610)" to="(1490,610)"/>
+    <wire from="(1270,480)" to="(1310,480)"/>
+    <wire from="(550,500)" to="(550,570)"/>
+    <wire from="(760,450)" to="(820,450)"/>
+    <wire from="(680,470)" to="(720,470)"/>
+    <wire from="(950,480)" to="(990,480)"/>
+    <wire from="(550,570)" to="(790,570)"/>
+    <wire from="(1260,600)" to="(1260,610)"/>
+    <wire from="(550,500)" to="(660,500)"/>
+    <wire from="(1340,600)" to="(1460,600)"/>
+    <wire from="(1260,600)" to="(1310,600)"/>
+    <wire from="(1530,570)" to="(1530,580)"/>
+    <wire from="(1310,470)" to="(1310,480)"/>
+    <wire from="(1310,590)" to="(1310,600)"/>
+    <wire from="(660,480)" to="(660,500)"/>
+    <wire from="(780,490)" to="(890,490)"/>
+    <wire from="(1290,470)" to="(1290,520)"/>
+    <wire from="(720,580)" to="(870,580)"/>
+    <wire from="(1310,470)" to="(1320,470)"/>
+    <wire from="(670,480)" to="(670,590)"/>
+    <wire from="(790,530)" to="(790,570)"/>
+    <wire from="(950,410)" to="(1360,410)"/>
+    <wire from="(820,480)" to="(850,480)"/>
+    <wire from="(1030,520)" to="(1290,520)"/>
+    <wire from="(700,460)" to="(700,520)"/>
+    <wire from="(660,500)" to="(740,500)"/>
+    <wire from="(700,520)" to="(780,520)"/>
+    <wire from="(740,500)" to="(820,500)"/>
+    <wire from="(1260,490)" to="(1260,600)"/>
+    <wire from="(1380,540)" to="(1380,580)"/>
+    <wire from="(480,490)" to="(550,490)"/>
+    <wire from="(720,460)" to="(730,460)"/>
+    <wire from="(1310,590)" to="(1460,590)"/>
+    <wire from="(820,570)" to="(940,570)"/>
+    <wire from="(480,590)" to="(670,590)"/>
+    <wire from="(810,560)" to="(810,570)"/>
+    <wire from="(870,580)" to="(870,590)"/>
+    <wire from="(890,480)" to="(890,490)"/>
+    <wire from="(950,410)" to="(950,480)"/>
+    <wire from="(820,500)" to="(820,570)"/>
+    <wire from="(1330,490)" to="(1370,490)"/>
+    <wire from="(1370,490)" to="(1370,580)"/>
+    <wire from="(780,490)" to="(780,520)"/>
+    <wire from="(820,450)" to="(820,480)"/>
+    <wire from="(1410,510)" to="(1410,580)"/>
+    <wire from="(740,470)" to="(740,500)"/>
+    <wire from="(1460,590)" to="(1460,600)"/>
+    <wire from="(1410,580)" to="(1530,580)"/>
+    <wire from="(1330,480)" to="(1330,490)"/>
+    <wire from="(1400,570)" to="(1400,580)"/>
+    <wire from="(640,530)" to="(790,530)"/>
+    <wire from="(790,570)" to="(810,570)"/>
+    <wire from="(1350,460)" to="(1360,460)"/>
+    <wire from="(1370,580)" to="(1380,580)"/>
+    <wire from="(1230,480)" to="(1240,480)"/>
+    <wire from="(1360,410)" to="(1360,460)"/>
+    <wire from="(680,460)" to="(700,460)"/>
+    <wire from="(1030,480)" to="(1030,520)"/>
+    <wire from="(1400,570)" to="(1530,570)"/>
+    <wire from="(1340,480)" to="(1340,600)"/>
+    <wire from="(1230,480)" to="(1230,540)"/>
+    <wire from="(810,560)" to="(940,560)"/>
+    <wire from="(1250,510)" to="(1410,510)"/>
+    <wire from="(1370,470)" to="(1460,470)"/>
+    <wire from="(750,470)" to="(750,590)"/>
+    <wire from="(640,470)" to="(640,530)"/>
+    <wire from="(1230,540)" to="(1380,540)"/>
+    <wire from="(1380,580)" to="(1400,580)"/>
+    <wire from="(1270,470)" to="(1290,470)"/>
+    <wire from="(640,470)" to="(650,470)"/>
+    <comp lib="5" loc="(1460,470)" name="Button">
       <a name="label" val="Gol_Visitante"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="6" loc="(1110,220)" name="Button">
+    <comp lib="5" loc="(850,480)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(1030,480)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(480,490)" name="Button">
+      <a name="label" val="Gol_ASA"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(760,450)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+    </comp>
+    <comp lib="5" loc="(890,480)" name="Hex Digit Display"/>
+    <comp lib="4" loc="(1270,470)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+    </comp>
+    <comp lib="5" loc="(990,480)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(480,590)" name="Button">
+      <a name="label" val="reset_ASA"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="5" loc="(1490,610)" name="Button">
       <a name="label" val="reset_Visitante"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="6" loc="(470,90)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(510,90)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(610,90)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(650,90)" name="Hex Digit Display"/>
-    <wire from="(100,100)" to="(170,100)"/>
-    <wire from="(100,200)" to="(290,200)"/>
-    <wire from="(1000,150)" to="(1000,190)"/>
-    <wire from="(1000,190)" to="(1020,190)"/>
-    <wire from="(1020,180)" to="(1020,190)"/>
-    <wire from="(1020,180)" to="(1150,180)"/>
-    <wire from="(1030,120)" to="(1030,190)"/>
-    <wire from="(1030,190)" to="(1150,190)"/>
-    <wire from="(1080,200)" to="(1080,210)"/>
-    <wire from="(1150,180)" to="(1150,190)"/>
-    <wire from="(170,100)" to="(170,110)"/>
-    <wire from="(170,110)" to="(170,180)"/>
-    <wire from="(170,110)" to="(280,110)"/>
-    <wire from="(170,180)" to="(410,180)"/>
-    <wire from="(260,140)" to="(410,140)"/>
-    <wire from="(260,80)" to="(260,140)"/>
-    <wire from="(260,80)" to="(270,80)"/>
-    <wire from="(280,110)" to="(360,110)"/>
-    <wire from="(280,90)" to="(280,110)"/>
-    <wire from="(290,200)" to="(340,200)"/>
-    <wire from="(290,90)" to="(290,200)"/>
-    <wire from="(300,70)" to="(320,70)"/>
-    <wire from="(300,80)" to="(340,80)"/>
-    <wire from="(320,130)" to="(400,130)"/>
-    <wire from="(320,70)" to="(320,130)"/>
-    <wire from="(340,190)" to="(340,200)"/>
-    <wire from="(340,190)" to="(490,190)"/>
-    <wire from="(340,70)" to="(340,80)"/>
-    <wire from="(340,70)" to="(350,70)"/>
-    <wire from="(360,110)" to="(440,110)"/>
-    <wire from="(360,80)" to="(360,110)"/>
-    <wire from="(370,200)" to="(490,200)"/>
-    <wire from="(370,80)" to="(370,200)"/>
-    <wire from="(380,60)" to="(440,60)"/>
-    <wire from="(400,100)" to="(400,130)"/>
-    <wire from="(400,100)" to="(510,100)"/>
-    <wire from="(410,140)" to="(410,180)"/>
-    <wire from="(410,180)" to="(430,180)"/>
-    <wire from="(430,170)" to="(430,180)"/>
-    <wire from="(430,170)" to="(560,170)"/>
-    <wire from="(440,110)" to="(440,180)"/>
-    <wire from="(440,180)" to="(560,180)"/>
-    <wire from="(440,60)" to="(440,90)"/>
-    <wire from="(440,90)" to="(470,90)"/>
-    <wire from="(490,190)" to="(490,200)"/>
-    <wire from="(510,90)" to="(510,100)"/>
-    <wire from="(560,170)" to="(560,180)"/>
-    <wire from="(570,20)" to="(570,90)"/>
-    <wire from="(570,20)" to="(980,20)"/>
-    <wire from="(570,90)" to="(610,90)"/>
-    <wire from="(650,130)" to="(910,130)"/>
-    <wire from="(650,90)" to="(650,130)"/>
-    <wire from="(850,150)" to="(1000,150)"/>
-    <wire from="(850,90)" to="(850,150)"/>
-    <wire from="(850,90)" to="(860,90)"/>
-    <wire from="(870,100)" to="(870,120)"/>
-    <wire from="(870,120)" to="(1030,120)"/>
-    <wire from="(880,100)" to="(880,210)"/>
-    <wire from="(880,210)" to="(880,220)"/>
-    <wire from="(880,210)" to="(930,210)"/>
-    <wire from="(880,220)" to="(1110,220)"/>
-    <wire from="(890,80)" to="(910,80)"/>
-    <wire from="(890,90)" to="(930,90)"/>
-    <wire from="(910,80)" to="(910,130)"/>
-    <wire from="(930,200)" to="(1080,200)"/>
-    <wire from="(930,200)" to="(930,210)"/>
-    <wire from="(930,80)" to="(930,90)"/>
-    <wire from="(930,80)" to="(940,80)"/>
-    <wire from="(950,100)" to="(990,100)"/>
-    <wire from="(950,90)" to="(950,100)"/>
-    <wire from="(960,210)" to="(1080,210)"/>
-    <wire from="(960,90)" to="(960,210)"/>
-    <wire from="(970,70)" to="(980,70)"/>
-    <wire from="(980,20)" to="(980,70)"/>
-    <wire from="(990,100)" to="(990,190)"/>
-    <wire from="(990,190)" to="(1000,190)"/>
-    <wire from="(990,80)" to="(1080,80)"/>
-    <wire from="(990,80)" to="(990,100)"/>
+    <comp lib="4" loc="(680,460)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+    </comp>
+    <comp lib="4" loc="(1350,460)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+    </comp>
   </circuit>
   <circuit name="Cronometro">
-    <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Cronometro"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="4.0"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(670,230)" to="(670,240)"/>
+    <wire from="(710,230)" to="(710,240)"/>
+    <wire from="(590,270)" to="(710,270)"/>
+    <wire from="(720,400)" to="(720,410)"/>
+    <wire from="(650,100)" to="(650,430)"/>
+    <wire from="(730,430)" to="(780,430)"/>
+    <wire from="(580,360)" to="(630,360)"/>
+    <wire from="(550,170)" to="(550,430)"/>
+    <wire from="(630,360)" to="(690,360)"/>
+    <wire from="(750,320)" to="(750,390)"/>
+    <wire from="(540,270)" to="(580,270)"/>
+    <wire from="(580,270)" to="(580,360)"/>
+    <wire from="(790,270)" to="(790,300)"/>
+    <wire from="(620,250)" to="(850,250)"/>
+    <wire from="(740,310)" to="(780,310)"/>
+    <wire from="(750,300)" to="(790,300)"/>
+    <wire from="(550,430)" to="(650,430)"/>
+    <wire from="(700,360)" to="(700,390)"/>
+    <wire from="(710,270)" to="(710,300)"/>
+    <wire from="(360,250)" to="(470,250)"/>
+    <wire from="(620,220)" to="(620,250)"/>
+    <wire from="(600,90)" to="(600,170)"/>
+    <wire from="(580,220)" to="(580,240)"/>
+    <wire from="(520,270)" to="(540,270)"/>
+    <wire from="(960,220)" to="(960,390)"/>
+    <wire from="(600,90)" to="(620,90)"/>
+    <wire from="(650,80)" to="(670,80)"/>
+    <wire from="(790,270)" to="(940,270)"/>
+    <wire from="(690,410)" to="(720,410)"/>
+    <wire from="(590,320)" to="(750,320)"/>
+    <wire from="(640,240)" to="(670,240)"/>
+    <wire from="(540,170)" to="(540,270)"/>
+    <wire from="(520,160)" to="(530,160)"/>
+    <wire from="(780,310)" to="(780,430)"/>
+    <wire from="(650,430)" to="(730,430)"/>
+    <wire from="(590,270)" to="(590,320)"/>
+    <wire from="(480,430)" to="(550,430)"/>
+    <wire from="(750,290)" to="(760,290)"/>
+    <wire from="(640,100)" to="(650,100)"/>
+    <wire from="(910,220)" to="(960,220)"/>
+    <wire from="(640,110)" to="(640,240)"/>
+    <wire from="(630,100)" to="(630,360)"/>
+    <wire from="(740,380)" to="(800,380)"/>
+    <wire from="(520,250)" to="(620,250)"/>
+    <wire from="(670,80)" to="(670,110)"/>
+    <wire from="(940,180)" to="(940,270)"/>
+    <wire from="(730,400)" to="(730,430)"/>
+    <wire from="(590,120)" to="(590,150)"/>
+    <wire from="(560,160)" to="(560,240)"/>
+    <wire from="(800,230)" to="(800,380)"/>
+    <wire from="(520,160)" to="(520,250)"/>
+    <wire from="(590,120)" to="(740,120)"/>
+    <wire from="(560,240)" to="(580,240)"/>
+    <wire from="(750,390)" to="(960,390)"/>
+    <wire from="(700,310)" to="(730,310)"/>
+    <wire from="(710,240)" to="(740,240)"/>
+    <wire from="(450,290)" to="(470,290)"/>
+    <wire from="(560,150)" to="(590,150)"/>
+    <wire from="(640,110)" to="(670,110)"/>
+    <wire from="(910,180)" to="(940,180)"/>
+    <wire from="(740,120)" to="(740,240)"/>
+    <wire from="(760,230)" to="(760,290)"/>
+    <wire from="(690,360)" to="(690,410)"/>
+    <wire from="(700,310)" to="(700,360)"/>
+    <wire from="(850,200)" to="(860,200)"/>
+    <wire from="(690,360)" to="(700,360)"/>
+    <wire from="(700,390)" to="(710,390)"/>
+    <wire from="(710,300)" to="(720,300)"/>
+    <wire from="(740,390)" to="(750,390)"/>
+    <wire from="(850,200)" to="(850,250)"/>
+    <comp lib="5" loc="(480,430)" name="Button">
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="1" loc="(600,170)" name="AND Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="4" loc="(750,290)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x5"/>
+      <a name="label" val="De_Seg"/>
+    </comp>
+    <comp lib="0" loc="(450,290)" name="Clock"/>
+    <comp lib="5" loc="(670,230)" name="Hex Digit Display"/>
+    <comp lib="4" loc="(650,80)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+      <a name="label" val="De_min"/>
+    </comp>
+    <comp lib="5" loc="(760,230)" name="Hex Digit Display"/>
+    <comp lib="4" loc="(560,150)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+      <a name="label" val="Uni_min"/>
+    </comp>
+    <comp lib="5" loc="(710,230)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(800,230)" name="Hex Digit Display"/>
     <comp lib="0" loc="(360,250)" name="Pin">
-      <a name="appearance" val="classic"/>
       <a name="label" val="Run"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(450,290)" name="Clock">
-      <a name="appearance" val="classic"/>
-    </comp>
-    <comp lib="1" loc="(520,270)" name="AND Gate"/>
-    <comp lib="1" loc="(600,170)" name="AND Gate">
-      <a name="facing" val="north"/>
+    <comp lib="4" loc="(740,380)" name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0x9"/>
+      <a name="label" val="Uni_seg"/>
     </comp>
     <comp lib="1" loc="(860,200)" name="AND Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="5" loc="(560,150)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Uni_min"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(650,80)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="De_min"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(740,380)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="Uni_seg"/>
-      <a name="max" val="0x9"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="5" loc="(750,290)" name="Counter">
-      <a name="appearance" val="classic"/>
-      <a name="label" val="De_Seg"/>
-      <a name="max" val="0x5"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="6" loc="(480,430)" name="Button">
-      <a name="label" val="Reset"/>
-    </comp>
-    <comp lib="6" loc="(660,230)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(700,230)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(760,230)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(800,230)" name="Hex Digit Display"/>
-    <wire from="(360,250)" to="(470,250)"/>
-    <wire from="(450,290)" to="(470,290)"/>
-    <wire from="(480,430)" to="(550,430)"/>
-    <wire from="(520,160)" to="(520,250)"/>
-    <wire from="(520,160)" to="(530,160)"/>
-    <wire from="(520,250)" to="(620,250)"/>
-    <wire from="(520,270)" to="(540,270)"/>
-    <wire from="(540,170)" to="(540,270)"/>
-    <wire from="(540,270)" to="(580,270)"/>
-    <wire from="(550,170)" to="(550,430)"/>
-    <wire from="(550,430)" to="(650,430)"/>
-    <wire from="(560,150)" to="(590,150)"/>
-    <wire from="(560,160)" to="(560,240)"/>
-    <wire from="(560,240)" to="(580,240)"/>
-    <wire from="(580,220)" to="(580,240)"/>
-    <wire from="(580,270)" to="(580,360)"/>
-    <wire from="(580,360)" to="(630,360)"/>
-    <wire from="(590,120)" to="(590,150)"/>
-    <wire from="(590,120)" to="(740,120)"/>
-    <wire from="(590,270)" to="(590,320)"/>
-    <wire from="(590,270)" to="(710,270)"/>
-    <wire from="(590,320)" to="(750,320)"/>
-    <wire from="(600,90)" to="(600,170)"/>
-    <wire from="(600,90)" to="(620,90)"/>
-    <wire from="(620,220)" to="(620,250)"/>
-    <wire from="(620,250)" to="(850,250)"/>
-    <wire from="(630,100)" to="(630,360)"/>
-    <wire from="(630,360)" to="(690,360)"/>
-    <wire from="(640,100)" to="(650,100)"/>
-    <wire from="(640,110)" to="(640,240)"/>
-    <wire from="(640,110)" to="(670,110)"/>
-    <wire from="(640,240)" to="(660,240)"/>
-    <wire from="(650,100)" to="(650,430)"/>
-    <wire from="(650,430)" to="(730,430)"/>
-    <wire from="(650,80)" to="(670,80)"/>
-    <wire from="(660,230)" to="(660,240)"/>
-    <wire from="(670,80)" to="(670,110)"/>
-    <wire from="(690,360)" to="(690,410)"/>
-    <wire from="(690,360)" to="(700,360)"/>
-    <wire from="(690,410)" to="(720,410)"/>
-    <wire from="(700,230)" to="(700,240)"/>
-    <wire from="(700,240)" to="(740,240)"/>
-    <wire from="(700,310)" to="(700,360)"/>
-    <wire from="(700,310)" to="(730,310)"/>
-    <wire from="(700,360)" to="(700,390)"/>
-    <wire from="(700,390)" to="(710,390)"/>
-    <wire from="(710,270)" to="(710,300)"/>
-    <wire from="(710,300)" to="(720,300)"/>
-    <wire from="(720,400)" to="(720,410)"/>
-    <wire from="(730,400)" to="(730,430)"/>
-    <wire from="(730,430)" to="(780,430)"/>
-    <wire from="(740,120)" to="(740,240)"/>
-    <wire from="(740,310)" to="(780,310)"/>
-    <wire from="(740,380)" to="(800,380)"/>
-    <wire from="(740,390)" to="(750,390)"/>
-    <wire from="(750,290)" to="(760,290)"/>
-    <wire from="(750,300)" to="(790,300)"/>
-    <wire from="(750,320)" to="(750,390)"/>
-    <wire from="(750,390)" to="(960,390)"/>
-    <wire from="(760,230)" to="(760,290)"/>
-    <wire from="(780,310)" to="(780,430)"/>
-    <wire from="(790,270)" to="(790,300)"/>
-    <wire from="(790,270)" to="(940,270)"/>
-    <wire from="(800,230)" to="(800,380)"/>
-    <wire from="(850,200)" to="(850,250)"/>
-    <wire from="(850,200)" to="(860,200)"/>
-    <wire from="(910,180)" to="(940,180)"/>
-    <wire from="(910,220)" to="(960,220)"/>
-    <wire from="(940,180)" to="(940,270)"/>
-    <wire from="(960,220)" to="(960,390)"/>
+    <comp lib="1" loc="(520,270)" name="AND Gate"/>
   </circuit>
 </project>
