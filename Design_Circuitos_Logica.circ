@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project source="2.7.1" version="1.0">
+  <lib desc="#Wiring" name="0" />
+  <lib desc="#Gates" name="1" />
+  <lib desc="#Plexers" name="2" />
+  <lib desc="#Arithmetic" name="3" />
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5" />
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val="" />
+      <a name="font" val="SansSerif plain 12" />
+      <a name="halign" val="center" />
+      <a name="valign" val="base" />
+    </tool>
+  </lib>
+  <main name="Design_Circuitos_Logica" />
+  <options>
+    <a name="gateUndefined" val="ignore" />
+    <a name="simlimit" val="1000" />
+    <a name="simrand" val="0" />
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool" />
+    <tool lib="6" map="Button3" name="Menu Tool" />
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool" />
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool" />
+    <tool lib="6" name="Edit Tool" />
+    <tool lib="6" name="Wiring Tool" />
+    <tool lib="6" name="Text Tool">
+      <a name="text" val="" />
+      <a name="font" val="SansSerif plain 12" />
+      <a name="halign" val="center" />
+      <a name="valign" val="base" />
+    </tool>
+    <sep />
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false" />
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west" />
+      <a name="output" val="true" />
+      <a name="labelloc" val="east" />
+    </tool>
+    <tool lib="1" name="NOT Gate" />
+    <tool lib="1" name="AND Gate" />
+    <tool lib="1" name="OR Gate" />
+  </toolbar>
+  <circuit name="Design_Circuitos_Logica">
+    <a name="circuit" val="Design_Circuitos_Logica" />
+    <a name="clabel" val="" />
+    <a name="clabelup" val="east" />
+    <a name="clabelfont" val="SansSerif plain 12" />
+    <comp loc="(420,60)" name="Text" lib="6">
+      <a name="text" val="DESIGN DOS DOIS RETÂNGULOS VERTICAIS GIGANTES DOS CIRCUITOS DE LÓGICA" />
+      <a name="font" val="SansSerif bold 14" />
+    </comp>
+    <comp loc="(420,90)" name="Text" lib="6">
+      <a name="text" val="Bloco 1: JOGADORES + PLACAR (220x500)   |   Bloco 2: LÓGICA (200x640)" />
+      <a name="font" val="SansSerif plain 11" />
+    </comp>
+    <appear>
+      <rect fill="#f8fafc" height="500" stroke="#1e293b" stroke-width="2" width="220" x="50" y="50" />
+      <rect fill="#0f172a" height="28" stroke="none" width="220" x="50" y="50" />
+      <text fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="160" y="69">JOGADORES + PLACAR</text>
+      <text fill="#64748b" font-family="SansSerif" font-size="9" text-anchor="middle" x="160" y="542">Posse | GOL Laranja | Placar | Tanque</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="93">BE_10B</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="113">GOL_E</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="133">BD_10B</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="153">GOL_D</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="173">RUN</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="193">RST_CR</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="213">RST_A</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="233">RST_V</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="253">VAL_90</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="273">RST_DES</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="293">COR_T1</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="313">COR_T2</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="93">BUS_E</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="113">BUS_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="133">LED_E</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="153">LED_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="173">M</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="193">QA_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="213">QA_U</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="233">QV_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="253">QV_U</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="273">CM</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="293">DM</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="313">UM</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="333">DS</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="353">US</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="373">PAUSA</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="393">IGUAL</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="413">PRORR</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="433">FIM</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="453">WM</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="473">WL</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="493">WR</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="513">POS_7B</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="262" y="533">BLK_8B</text>
+      <rect fill="#f8fafc" height="640" stroke="#1e293b" stroke-width="2" width="200" x="50" y="650" />
+      <rect fill="#0f172a" height="28" stroke="none" width="200" x="50" y="650" />
+      <text fill="#ffffff" font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="150" y="669">LÓGICA</text>
+      <text fill="#64748b" font-family="SansSerif" font-size="9" text-anchor="middle" x="150" y="1282">Substituição + MUX + Teclados</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="693">CONFIRMAR</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="713">EQUIPE</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="733">RESET</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="753">SEL_ADV</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="773">KS1</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="793">KS2</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="813">KS3</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="833">KS4</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="853">KS5</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="873">KS6</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="893">KS7</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="913">KS8</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="933">KS9</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="953">KS10</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="973">KS11</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="993">KE1</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1013">KE2</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1033">KE3</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1053">KE4</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1073">KE5</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1093">KE6</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1113">KE7</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1133">KE8</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1153">KE9</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1173">KE10</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1193">KE11</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1213">KB0</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1233">KB1</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1253">KB2</text>
+      <text fill="#334155" font-family="SansSerif" font-size="8" text-anchor="start" x="58" y="1273">KB3</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="693">COUNT_ASA</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="713">COUNT_AMADORES</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="733">SAI_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="753">SAI_U</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="773">ENTRA_D</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="793">ENTRA_U</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="813">LAST_BANCO</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="833">LAST_EQUIPE</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="853">ATIVO_M</text>
+      <text fill="#0f766e" font-family="SansSerif" font-size="8" text-anchor="end" x="242" y="873">ATIVO_F</text>
+      <circ-anchor facing="east" height="6" width="6" x="147" y="87" />
+    </appear>
+  </circuit>
+</project>
